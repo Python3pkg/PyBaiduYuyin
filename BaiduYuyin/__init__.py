@@ -489,6 +489,6 @@ if __name__ == "__main__":
         print("Got it! Now to recognize it...")
         try:
             text = r.recognize(audio)
-            print 'You said ' + text
+            print('You said ' + text)
         except LookupError:
             print("Oops! Didn't catch that")

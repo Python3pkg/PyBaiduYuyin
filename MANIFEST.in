@@ -1,2 +1,2 @@
-include PyBaiduYuyin/flac/*
-include PyBaiduYuyin/player/*
+include BaiduYuyin/flac/*
+include BaiduYuyin/player/*

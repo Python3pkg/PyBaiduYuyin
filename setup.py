@@ -8,20 +8,20 @@ if sys.version_info < (2, 6):
     print("THIS MODULE REQUIRES PYTHON 2.6 OR LATER. YOU ARE CURRENTLY USING PYTHON " + sys.version)
     sys.exit(1)
 
-import PyBaiduYuyin
+import BaiduYuyin
 
 setup(
-    name="PyBaiduYuyin",
-    version=PyBaiduYuyin.__version__,
-    packages=["PyBaiduYuyin"],
+    name="BaiduYuyin",
+    version=BaiduYuyin.__version__,
+    packages=["BaiduYuyin"],
     include_package_data=True,
 
     # PyPI metadata
-    author=PyBaiduYuyin.__author__,
-    author_email="Changxu.mail@gmail.com",
-    description=PyBaiduYuyin.__doc__,
+    author=BaiduYuyin.__author__,
+    author_email="wuwenjie718@gmail.com",
+    description=BaiduYuyin.__doc__,
     long_description=open("README.rst").read(),
-    license=PyBaiduYuyin.__license__,
+    license=BaiduYuyin.__license__,
     keywords="baidu voice service",
-    url="https://github.com/DelightRun/PyBaiduYuyin",
+    url="https://github.com/wwj718/PyBaiduYuyin",
 )
