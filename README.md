@@ -15,6 +15,12 @@ Requirement
 
 + [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/) - require manual installation
 
+### mac下安装依赖
+*  brew install PyAudio
+*  brew install flac
+*  brew install mpg123
+*  
+
 Install
 =======
 
