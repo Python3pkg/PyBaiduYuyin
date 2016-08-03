@@ -52,6 +52,9 @@ with pby.Microphone() as source:
 print(r.recognize(audio))
 ```
 
+默认将使用原作者的DEFAULT_APP_KEY和DEFAULT_SECRET_KEY，可以自行修改`BaiduYuyin/__init__.py`
+
+
 ### Recognition
 
 The usage of Recognition module is same as [SpeechRecognition](https://github.com/Uberi/speech_recognition), except using `Baidu App Key` and `Baidu Secret Key` instead of `Google App Key`.
