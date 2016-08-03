@@ -35,6 +35,17 @@ Example:
     tts = pby.TTS(app_key=YOUR_APP_KEY, secret_key=YOUR_SECRET_KEY)
     tts.say("你好")
 
+### microphone recognition
+```python
+import BaiduYuyin as pby
+r = pby.Recognizer()
+with pby.Microphone() as source:
+    print("Say something!")
+    audio = r.listen(source)
+
+print(r.recognize(audio))
+```
+
 ### Recognition
 
 The usage of Recognition module is same as [SpeechRecognition](https://github.com/Uberi/speech_recognition), except using `Baidu App Key` and `Baidu Secret Key` instead of `Google App Key`.
