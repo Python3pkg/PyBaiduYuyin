@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 import sys
 if sys.version_info < (2, 6):
-    print("THIS MODULE REQUIRES PYTHON 2.6 OR LATER. YOU ARE CURRENTLY USING PYTHON " + sys.version)
+    print(("THIS MODULE REQUIRES PYTHON 2.6 OR LATER. YOU ARE CURRENTLY USING PYTHON " + sys.version))
     sys.exit(1)
 
 import BaiduYuyin

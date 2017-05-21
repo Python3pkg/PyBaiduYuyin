@@ -12,8 +12,9 @@ import math, audioop, collections
 import json
 
 try: # try to use python2 module
-    from urllib import urlencode
-    from urllib2 import Request, urlopen, URLError
+    from urllib.parse import urlencode
+    from urllib.request import Request, urlopen
+    from urllib.error import URLError
 except ImportError: # otherwise, use python3 module
     from urllib.request import Request, urlopen
     from urllib.error import URLError
@@ -489,6 +490,6 @@ if __name__ == "__main__":
         print("Got it! Now to recognize it...")
         try:
             text = r.recognize(audio)
-            print('You said ' + text)
+            print(('You said ' + text))
         except LookupError:
             print("Oops! Didn't catch that")
